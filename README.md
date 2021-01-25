@@ -14,8 +14,6 @@ A modal recipe site that shows the individual information about the cheff and th
 
 ## 🌐 Preview Online
 
-[go](www.google.com.br){:target="_blank" rel="noopener"}
-
 <p><a href="https://bit.ly/foodfy-website">Click here to view</a></p>
 
 <hr />
