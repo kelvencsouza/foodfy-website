@@ -1,22 +1,16 @@
-<h1 align="center">
-<br>
-Foodfy
-</h1>
+# Foodfy
 
-<div align="center" >
-  <img src="https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png">
-</div>
+<a href="https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png"><img src="https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png" alt="landing page"></a>
 
-<p align="center">
-A modal recipe site that shows the individual information about the cheff and the recipe according to the user's click on each one.</p>
+<p>A modal recipe site that shows the individual information about the cheff and the recipe according to the user's click on each one.</p>
 
-<hr />
+#
 
 ## 🌐 Preview Online
 
 <p><a href="https://bit.ly/foodfy-website">Click here to view</a></p>
 
-<hr />
+#
 
 ## 🚀 Technologies
 
