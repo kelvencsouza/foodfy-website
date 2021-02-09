@@ -8,7 +8,7 @@ A modal recipe site that shows the individual information about the cheff and th
 
 🌐 Preview Online
 
-<p><a href="https://bit.ly/foodfy-website">Click here to view</a></p>
+<a href="https://bit.ly/foodfy-website">Click here to view</a>
 
 #
 
