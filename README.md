@@ -17,7 +17,10 @@ This project was developed with the following technologies:
 
 - ✔️ HTML
 
+- ✔️ Nunjucks
+
 - ✔️ JavaScript
- 
+
+Se quiser ajuda com esse projeto entre na minha comunidade no [Discord](https://discord.gg/2QYUqUVG)
 [LinkedIn](https://www.linkedin.com/in/kelvenluiz/) | [Email](mailto:kelvenluiz@usp.br) </br>
 Made with by Kelven Luiz
