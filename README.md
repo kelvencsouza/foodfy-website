@@ -22,8 +22,7 @@ This project was developed with the following technologies:
 - ✔️ JavaScript
 
 Se quiser ajuda com esse projeto entre na minha comunidade no <a href="https://discord.gg/2QYUqUVG" target="_blank">Discord</a>.</br>
-Made with by Kelven Luiz <a style="color: #009f9d;">💜<a><br> 
-<a href="https://www.linkedin.com/in/kelvenluiz/" target="_blank">LinkedIn</a> | <a href="mailto:kelvenbr@gmail.com" target="_blank">E-mail</a>
+Made with by Kelven Luiz 💙
 
 
 
