@@ -4,7 +4,8 @@
   "description": "<a><img src=\"https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png\" alt=\"landing page\"></a>",
   "main": "data.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "nodem server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/kelvenluiz/foodfy-website#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
     "nunjucks": "^3.2.3"
