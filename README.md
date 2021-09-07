@@ -21,7 +21,6 @@ This project was developed with the following technologies:
 
 - ✔️ JavaScript
 
-Change the game! 🏌️<br>
 Se quiser ajuda com esse projeto entre na minha comunidade do <a href="https://discord.gg/2QYUqUVG" target="_blank">Discord</a>.</br>
 
 
