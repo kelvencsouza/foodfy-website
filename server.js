@@ -29,6 +29,6 @@ server.get("/sobre", function(req, res) {
     return res.render("sobre")
 })
 
-server.listen(5000, function() {
+server.listen(3000, function() {
     console.log("Server is running!")
 })
