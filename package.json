@@ -1,0 +1,25 @@
+{
+  "name": "foodfy-website",
+  "version": "1.0.0",
+  "description": "<a><img src=\"https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png\" alt=\"landing page\"></a>",
+  "main": "data.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvenluiz/foodfy-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvenluiz/foodfy-website/issues"
+  },
+  "homepage": "https://github.com/kelvenluiz/foodfy-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "nunjucks": "^3.2.3"
+  }
+}

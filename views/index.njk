@@ -1,21 +1,12 @@
-<html>
+{% extends "layout.njk" %}
+
 <head>
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/assets/fav.png" type="image/x-icon">
+    {% block head %}
+        <link rel="stylesheet" href="style.css">
+    {% endblock %}
 </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <img src="/assets/logo.png" alt="Logotipo">
-        </div>
-
-        <div class="menu">
-            <a href="/sobre.html">Sobre</a>
-            <a href="/receitas.html">Receitas</a>
-        </div>
-    </nav>
+{% block content %}
 
     <header>
         <div class="banner">
@@ -23,7 +14,7 @@
                 <h1>As melhores receitas</h1>
                 <a>Aprenda a construir os melhores pratos por receitas criadas por profissionais do mundo inteiro</a>
             </div>
-            <div class="imagem"><img src="/assets/chef.png" alt=""></div>
+            <div class="imagem"><img src="chef.png" alt=""></div>
         </div>
     </header>
 
@@ -34,51 +25,44 @@
 
         <div class="imagensreceitas">
             <div class="imgtext">
-                <img src="/assets/burger.png" alt="Burguer">
+                <img src="burger.png" alt="Burguer">
                 <a class="firsttext">Triplo bacon burguer</a>
                 <a class="secondtext">por Jorge Relato</a>
             </div>
 
             <div class="imgtext">
-                <img src="/assets/pizza.png" alt="Pizza">
+                <img src="pizza.png" alt="Pizza">
                 <a class="firsttext">Pizza 4 estações</a>
                 <a class="secondtext">por Fabiana Melo</a>
             </div>
 
 
             <div class="imgtext">
-                <img src="/assets/espaguete.png" alt="Espaguete">
+                <img src="espaguete.png" alt="Espaguete">
                 <a class="firsttext">Espaguete ao olho</a>
                 <a class="secondtext">por Júlia Kinoto</a>
             </div>
 
 
             <div class="imgtext">
-                <img src="/assets/lasanha.png" alt="Lasanha">
+                <img src="lasanha.png" alt="Lasanha">
                 <a class="firsttext">Lasanha mac n' cheese</a>
                 <a class="secondtext">por Juliano Vieira</a>
             </div>
 
             <div class="imgtext">
-                <img src="/assets/doce.png" alt="Doce">
+                <img src="doce.png" alt="Doce">
                 <a class="firsttext">Docinhos pão-do-céu</a>
                 <a class="secondtext">por Ricardo Gouvea</a>
             </div>
 
             <div class="imgtext">
-                <img src="/assets/asinhas.png" alt="Asinhas">
+                <img src="asinhas.png" alt="Asinhas">
                 <a class="firsttext">Asinhas de frango ao barbecue</a>
                 <a class="secondtext">por Vania Steroski</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer">
-            <a>Todos direitos reservados, receitas Foodfy.</a>
-        </div>
-    </footer>
+{% endblock %}
 
-    <script src="script.js"></script>
-</body>
-</html>

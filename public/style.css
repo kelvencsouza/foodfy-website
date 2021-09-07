@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 :root {
     --color-banner: #FBDFDB;
 }
@@ -8,31 +6,35 @@
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
 }
 
+section {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 nav {
-    padding: 36.1px;
     display: flex;
-    padding-bottom: 36px;
-    padding-right: 584px;
-    justify-content: center;
-    position: static;
+    flex-direction: row;
+    padding-top: 36.1px;
+    padding-bottom: 30px;
 }
 
-nav .menu {
-    padding-left: 122.4px;
+.logo img {
+    padding-right: 122.4px;
 }
 
-nav .menu a {
-    font-size: 16px;
-    line-height: 19px;
+#sobre {
+    padding-right: 30px;
+}
+
+.menu a {
     text-decoration: none;
-    margin-left: 30px;
+    font-size: 16px;
     color: #111111;
+    line-height: 19px;
+    font-weight: 500;
 }
 
 .about {

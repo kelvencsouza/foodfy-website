@@ -1,29 +1,17 @@
-<html>
+{% extends "layout.njk" %}
 
 <head>
-    <meta name="Site de receitas" content="Receitas">
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="stylereceitas.css">
+    {% block head %}
+        <link rel="stylesheet" href="style_receitas.css">
+    {% endblock %}
 </head>
 
-<body>
-
-    <nav>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/assets/logo.png">
-            </a>
-        </div>
-        <div class="menu">
-            <a href="/sobre.html">Sobre</a>
-            <a href="">Receitas</a>
-        </div>
-    </nav>
+{% block content %}
 
     <section class="recipes">
 
         <div class="card">
-            <img src="/assets/burger.png">
+            <img src="burger.png">
             <div class="card__title">
                 <p>Triplo bacon burguer</p>
             </div>
@@ -33,7 +21,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/pizza.png">
+            <img src="pizza.png">
             <div class="card__title">
                 <p>Pizza 4 estações</p>
             </div>
@@ -43,7 +31,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/espaguete.png">
+            <img src="espaguete.png">
             <div class="card__title">
                 <p>Espaguete ao alho</p>
             </div>
@@ -53,7 +41,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/lasanha.png">
+            <img src="lasanha.png">
             <div class="card__title">
                 <p>Lasanha mac n' cheese</p>
             </div>
@@ -63,7 +51,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/doce.png">
+            <img src="doce.png">
             <div class="card__title">
                 <p>Docinhos pão-do-céu</p>
             </div>
@@ -73,7 +61,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/asinhas.png">
+            <img src="asinhas.png">
             <div class="card__title">
                 <p>Asinhas de frango ao barbecue</p>
             </div>
@@ -83,7 +71,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/burger.png">
+            <img src="burger.png">
             <div class="card__title">
                 <p>Triplo bacon burguer</p>
             </div>
@@ -93,7 +81,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/pizza.png">
+            <img src="pizza.png">
             <div class="card__title">
                 <p>Pizza 4 estações</p>
             </div>
@@ -103,7 +91,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/espaguete.png">
+            <img src="espaguete.png">
             <div class="card__title">
                 <p>Espaguete ao alho</p>
             </div>
@@ -113,7 +101,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/lasanha.png">
+            <img src="lasanha.png">
             <div class="card__title">
                 <p>Lasanha mac n' cheese</p>
             </div>
@@ -123,7 +111,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/doce.png">
+            <img src="doce.png">
             <div class="card__title">
                 <p>Docinhos pão-do-céu</p>
             </div>
@@ -133,7 +121,7 @@
         </div>
 
         <div class="card">
-            <img src="/assets/asinhas.png">
+            <img src="asinhas.png">
             <div class="card__title">
                 <p>Asinhas de frango ao barbecue</p>
             </div>
@@ -155,14 +143,4 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            <a>Todos direitos reservados, receitas Foodfy.</a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+{% endblock %}

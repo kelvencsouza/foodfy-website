@@ -1,36 +1,25 @@
-<html>
+{% extends "layout.njk" %}
+
 <head>
-    <meta name="Site de receitas" content="Receitas">
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="stylessobre.css">
+    {% block head %}
+        <link rel="stylesheet" href="style_sobre.css">
+    {% endblock %}
 </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/assets/logo.png" alt="Logotipo">
-            </a>
-        </div>
-
-        <div class="menu">
-            <a href="">Sobre</a>
-            <a href="/receitas.html">Receitas</a>
-        </div>
-    </nav>
+{% block content %}
 
     <div class="sobre">
-        <div class="topo">
-            <h3>Sobre o Foodfy</h3>
-            <a href="">
+        <div>
+            <p class="sobre-title" id="first-title">Sobre o Foodfy</p>
+            <a id="sobre-description">
                 Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam
                 vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt
                 risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum
                 in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim
                 nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper
                 vitae eros ut, euismod convallis augue.
-                </br>
-                </br>
+                <br>
+                <br>
                 Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan.
                 Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu
                 ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent
@@ -39,17 +28,17 @@
             </a>
         </div>
 
-        <div class="meio">
-            <h4>Como tudo começou...</h4>
-            <a href="">
+        <div>
+            <p class="sobre-title">Como tudo começou...</p>
+            <a id="sobre-description">
                 Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam
                 vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt
                 risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum
                 in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim
                 nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper
                 vitae eros ut, euismod convallis augue.
-                </br>
-                </br>
+                <br>
+                <br>
                 Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan.
                 Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu
                 ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent
@@ -58,9 +47,9 @@
             </a>
         </div>
 
-        <div class="final">
-            <h4>Nossas receitas</h4>
-            <a href="">Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut
+        <div>
+            <p class="sobre-title">Nossas receitas</p>
+            <a id="sobre-description">Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut
                 accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis,
                 eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat.
                 Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales
@@ -68,12 +57,4 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            <a>Todos direitos reservados, receitas Foodfy.</a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+{% endblock %}
