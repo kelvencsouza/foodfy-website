@@ -29,6 +29,4 @@ server.get("/sobre", function(req, res) {
     return res.render("sobre")
 })
 
-server.listen(process.env.PORT, function() {
-    console.log("Server is running!")
-})
+server.listen(process.env.PORT || 3000)

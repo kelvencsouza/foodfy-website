@@ -4,8 +4,7 @@
   "description": "<a><img src=\"https://i.ibb.co/WVX7jmy/portfolio-template-foodfy.png\" alt=\"landing page\"></a>",
   "main": "data.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "nodem server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",

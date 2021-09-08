@@ -7,7 +7,7 @@ A modal recipe site that shows the individual information about the cheff and th
 
 # 🌐 Preview Online
 
-<a href="https://bit.ly/foodfy-website">Click here to view</a>
+<a href="https://bit.ly/foodfy-website" target="_blank">Click here to view</a>
 
 # 🚀 Technologies
 
