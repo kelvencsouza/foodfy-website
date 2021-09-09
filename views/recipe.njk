@@ -4,28 +4,27 @@
         <link rel="stylesheet" href="style_receitas.css">
     {% endblock %}
 </head>
-{% block content %}
-    <nav>
-        <div class="logo">
-            <a href="/"><img src="logo.png" alt="Logotipo"></a>
-        </div>
-        <div class="menu">
-            <a href="/sobre" id="sobre">Sobre</a>
-            <a href="/receitas">Receitas</a>
-        </div>
-    </nav>
-    <section class="recipes">
-        {% for item in items %}
-            <div class="card">
-                <img src="{{ item.image }}">
-                <div class="card__title">
-                    <p>{{ item.title }}</p>
+    {% block content %}
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="logo.png" alt="Logotipo"></a>
                 </div>
-                <div class="card__author">
-                    <p>{{ item.author }}</p>
+                <div class="menu">
+                    <a href="/sobre" id="sobre">Sobre</a>
+                    <a href="/receitas">Receitas</a>
                 </div>
-                </div>
-        {% endfor %}
-    </section>
+            </nav>
+            <section class="recipes">
+                <div class="card">
+                    <img src="{{ item.image }}">
+                        <div class="card__title">
+                            <p>{{ item.title }}</p>
+                        </div>
+                        <div class="card__author">
+                            <p>{{ item.author }}</p>
+                        </div>
+                    </div>
+                </section>
+            {% endblock %}
 
-{% endblock %}
