@@ -1,61 +1,59 @@
 {% extends "layout.njk" %}
-
 <head>
     {% block head %}
         <link rel="stylesheet" href="style.css">
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="logo.png" alt="Logotipo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="/sobre" id="sobre">Sobre</a>
+                <a href="/receitas">Receitas</a>
+            </div>
+        </nav>
     {% endblock %}
 </head>
-
 {% block content %}
-
     <header>
         <div class="banner">
             <div class="texto">
                 <h1>As melhores receitas</h1>
                 <a>Aprenda a construir os melhores pratos por receitas criadas por profissionais do mundo inteiro</a>
             </div>
-            <div class="imagem"><img src="chef.png" alt=""></div>
+            <div class="imagem"><img src="chef.png" alt=""> </div>
         </div>
     </header>
-
-    <section>
+    <section class="recipes">
         <div class="receitas">
             <h2>Mais acessadas</h2>
         </div>
-
         <div class="imagensreceitas">
             <div class="imgtext">
                 <img src="burger.png" alt="Burguer">
                 <a class="firsttext">Triplo bacon burguer</a>
                 <a class="secondtext">por Jorge Relato</a>
             </div>
-
             <div class="imgtext">
                 <img src="pizza.png" alt="Pizza">
                 <a class="firsttext">Pizza 4 estações</a>
                 <a class="secondtext">por Fabiana Melo</a>
             </div>
-
-
             <div class="imgtext">
                 <img src="espaguete.png" alt="Espaguete">
                 <a class="firsttext">Espaguete ao olho</a>
                 <a class="secondtext">por Júlia Kinoto</a>
             </div>
-
-
             <div class="imgtext">
                 <img src="lasanha.png" alt="Lasanha">
                 <a class="firsttext">Lasanha mac n' cheese</a>
                 <a class="secondtext">por Juliano Vieira</a>
             </div>
-
             <div class="imgtext">
                 <img src="doce.png" alt="Doce">
                 <a class="firsttext">Docinhos pão-do-céu</a>
                 <a class="secondtext">por Ricardo Gouvea</a>
             </div>
-
             <div class="imgtext">
                 <img src="asinhas.png" alt="Asinhas">
                 <a class="firsttext">Asinhas de frango ao barbecue</a>
@@ -63,6 +61,4 @@
             </div>
         </div>
     </section>
-
 {% endblock %}
-
