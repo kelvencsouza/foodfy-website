@@ -1,19 +1,17 @@
 {% extends "layout.njk" %}
-<head>
-    {% block head %}
-        <link rel="stylesheet" href="style.css">
-        <nav>
-            <div class="logo">
-                <a href="/"><img src="logo.png" alt="Logotipo">
-                </a>
-            </div>
-            <div class="menu">
-                <a href="/sobre" id="sobre">Sobre</a>
-                <a href="/receitas">Receitas</a>
-            </div>
-        </nav>
-    {% endblock %}
-</head>
+{% block head %}
+    <link rel="stylesheet" href="/style.css">
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="/logo.png" alt="Logotipo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/sobre" id="sobre">Sobre</a>
+            <a href="/receitas">Receitas</a>
+        </div>
+    </nav>
+{% endblock %}
 {% block content %}
     <header>
         <div class="banner">
@@ -21,7 +19,8 @@
                 <h1>As melhores receitas</h1>
                 <a>Aprenda a construir os melhores pratos por receitas criadas por profissionais do mundo inteiro</a>
             </div>
-            <div class="imagem"><img src="chef.png" alt=""> </div>
+            <div class="imagem"><img src="chef.png" alt="">
+            </div>
         </div>
     </header>
     <section class="recipes">

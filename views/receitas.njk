@@ -1,38 +1,40 @@
 {% extends "layout.njk" %}
-<head>
-    {% block head %}
-        <link rel="stylesheet" href="style_receitas.css">
+{% block head %}
+    <link rel="stylesheet" href="/style_receitas.css">
     {% endblock %}
-</head>
-{% block content %}
-    <nav>
-        <div class="logo">
-            <a href="/"><img src="logo.png" alt="Logotipo"></a>
-        </div>
-        <div class="menu">
-            <a href="/sobre" id="sobre">Sobre</a>
-            <a href="/receitas">Receitas</a>
-        </div>
-    </nav>
-    <section class="recipes">
-        {% for item in items %}
-            <div class="card">
-                <img src="{{ item.image }}">
-                <div class="card__title">
-                    <p>{{ item.title }}</p>
+    {% block content %}
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/logo.png" alt="Logotipo"></a>
                 </div>
-                <div class="card__author">
-                    <p>{{ item.author }}</p>
+                <div class="menu">
+                    <a href="/sobre" id="sobre">Sobre</a>
+                    <a href="/receitas">Receitas</a>
                 </div>
-                </div>
-        {% endfor %}
-    </section>
-    <div class="modalOverlay">
-        <div class="modal">
-            <img src="" alt="">
-            <h1></h1>
-            <h2></h2>
-            <p>Fechar modal</p>
-        </div>
-    </div>
-{% endblock %}
+            </nav>
+            <section class="recipes">
+                {% for item in items %}
+                    <div class="card">
+                        <img src="{{ item.image }}">
+                            <div class="card__title">
+                                <p>{{ item.title }}</p>
+                            </div>
+                            <div class="card__author">
+                                <p>{{ item.author }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </section>
+                <div class="modalOverlay">
+                    <div class="modal">
+                        <img src="" alt="">
+                            <h1></h1>
+                            <h2></h2>
+                            <p>Fechar modal</p>
+                        </div>
+                    </div>
+                {% endblock %}
+                {% block footer %}
+                    <script src="script.js"></script>
+                {% endblock %}

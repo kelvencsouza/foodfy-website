@@ -1,17 +1,15 @@
 {% extends "layout.njk" %}
-<head>
-    {% block head %}
-        <link rel="stylesheet" href="style_receitas.css">
+{% block head %}
+    <link rel="stylesheet" href="/style_recipe.css">
     {% endblock %}
-</head>
     {% block content %}
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="logo.png" alt="Logotipo"></a>
+                    <img src="/logo.png" alt="Logotipo"></a>
                 </div>
                 <div class="menu">
-                    <a href="/sobre" id="sobre">Sobre</a>
+                    <a href="/sobre" id="sobre" class="voa">Sobre</a>
                     <a href="/receitas">Receitas</a>
                 </div>
             </nav>
@@ -20,11 +18,43 @@
                     <img src="{{ item.image }}">
                         <div class="card__title">
                             <p>{{ item.title }}</p>
+                            <a>{{ item.author }}</a>
                         </div>
-                        <div class="card__author">
-                            <p>{{ item.author }}</p>
+                        <div class="card__ingredients">
+                            <div class="div_card">
+                                <a class="first_title" id="padding_top">Ingredientes</a>
+                                <a class="second_title">ESCONDER</a>
+                            </div>
+                            <p class="description">
+                                <ul class="description_list">
+                                    {% for item in item.ingredients %}
+                                        <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card__preparation">
+                            <div class="div_card">
+                                <a class="first_title" id="padding_top">Modo de preparo</a>
+                                <a class="second_title">ESCONDER</a>
+                            </div>
+                            <p class="description">
+                                <ul class="description_list">
+                                    {% for item in item.preparation %}
+                                        <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card__information">
+                            <div class="div_card">
+                                <a class="first_title" id="padding_top">Informações adicionais</a>
+                                <a class="second_title">ESCONDER</a>
+                            </div>
+                            <p class="description">{{ item.information }}</p>
                         </div>
                     </div>
                 </section>
             {% endblock %}
+
 

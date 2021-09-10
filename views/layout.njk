@@ -1,12 +1,5 @@
 <html>
     <head>
-        <title>Foodfy</title>
-        <link rel="icon" href="fav.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVKL5XX6ZZ"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -16,6 +9,13 @@
             gtag('js', new Date());
             gtag('config', 'G-DVKL5XX6ZZ');
         </script>
+        <title>Foodfy</title>
+        <link rel="icon" href="/fav.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
         {% block head %}{% endblock %}
     </head>
     <body>
@@ -27,7 +27,6 @@
                 <a>Todos direitos reservados, receitas Foodfy.</a>
             </div>
         </footer>
-        <script src="script.js"></script>
+        {% block footer %}{% endblock %}
     </body>
 </html>
-
