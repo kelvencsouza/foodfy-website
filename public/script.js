@@ -1,29 +1,34 @@
-const modalOverlay = document.querySelector('.modalOverlay')
-const modal = document.querySelector('.modal')
-const cards = document.querySelectorAll('.card')
-const closeModal = modal.querySelector('p')
-
-const abouts = document.querySelectorAll('.about')
-const receitas = document.querySelectorAll('.receita')
-
-for (let card of cards) {
-    card.addEventListener('click', () => {
-        srcImg = card.querySelector('img').getAttribute('src')
-        altImg = card.querySelector('img').getAttribute('alt')
-        cardTitle = card.querySelector('.card__title p').innerHTML
-        cardAuthor = card.querySelector('.card__author p').innerHTML
-        modal.querySelector('img').setAttribute('src', srcImg)
-        modal.querySelector('img').setAttribute('alt', altImg)
-        modal.querySelector('h1').innerHTML = cardTitle
-        modal.querySelector('h2').innerHTML = cardAuthor
-        modalOverlay.classList.add('active')
-    })
-}
-
-closeModal.addEventListener('click', () => {
-    modalOverlay.classList.remove('active')
-    modal.querySelector('img').setAttribute('src', "")
-    modal.querySelector('img').setAttribute('alt', "")
-    modal.querySelector('h1').innerHTML = ""
-    modal.querySelector('h2').innerHTML = ""
-})
+function activeMenuItems() {
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.menu a');
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i += 1) {
+      if (menuItem[i].href === currentLocation) {
+        menuItem[i].className = 'active';
+      }
+    }
+  }
+  
+  function hideShow() {
+    const hideShowButton = document.querySelectorAll('.second_title');
+    console.log(hideShowButton);
+    for (let i = 0; i < hideShowButton.length; i += 1) {
+      hideShowButton.item(i).addEventListener('click', () => {
+        const detailsContent = document.querySelectorAll('.description_list')[i];
+  
+        if (hideShowButton.item(i).innerHTML == 'ESCONDER') {
+          hideShowButton.item(i).innerHTML = 'MOSTRAR';
+  
+          detailsContent.style.display = 'none';
+        } else if (hideShowButton.item(i).innerHTML == 'MOSTRAR') {
+          hideShowButton.item(i).innerHTML = 'ESCONDER';
+  
+          detailsContent.style.display = 'block';
+        }
+      });
+    }
+  }
+  activeMenuItems();
+  hideShow();
+  
+  

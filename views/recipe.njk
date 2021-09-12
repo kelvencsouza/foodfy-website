@@ -23,7 +23,7 @@
                         <div class="card__ingredients">
                             <div class="div_card">
                                 <a class="first_title" id="padding_top">Ingredientes</a>
-                                <a class="second_title">ESCONDER</a>
+                                <span class="second_title">ESCONDER</span>
                             </div>
                             <p class="description">
                                 <ul class="description_list">
@@ -36,7 +36,7 @@
                         <div class="card__preparation">
                             <div class="div_card">
                                 <a class="first_title" id="padding_top">Modo de preparo</a>
-                                <a class="second_title">ESCONDER</a>
+                                <span class="second_title">ESCONDER</span>
                             </div>
                             <p class="description">
                                 <ul class="description_list">
@@ -49,12 +49,16 @@
                         <div class="card__information">
                             <div class="div_card">
                                 <a class="first_title" id="padding_top">Informações adicionais</a>
-                                <a class="second_title">ESCONDER</a>
+                                <span class="second_title">ESCONDER</span>
                             </div>
                             <p class="description">{{ item.information }}</p>
                         </div>
                     </div>
                 </section>
+            {% endblock %}
+
+            {% block footer %}
+                <script src="panel.js"></script>
             {% endblock %}
 
 
