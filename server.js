@@ -29,6 +29,7 @@ server.get("/receitas/:index", function (req, res) {
     const recipeIndex = req.params.index;
     const receita = receitas[recipeIndex];
     return res.render("recipe", { item: receita })
+    
 })
 
 server.get("/sobre", function (req, res) {
@@ -36,3 +37,4 @@ server.get("/sobre", function (req, res) {
 })
 
 server.listen(process.env.PORT || 3000)
+

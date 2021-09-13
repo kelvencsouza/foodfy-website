@@ -26,6 +26,7 @@ nav {
     padding-bottom: 20px;
     max-width: 940px;
     margin: 0 auto;
+    user-select: none;
 }
 
 .logo img {

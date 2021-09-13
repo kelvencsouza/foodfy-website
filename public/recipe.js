@@ -1,15 +1,4 @@
-function activeMenuItems() {
-    const currentLocation = location.href;
-    const menuItem = document.querySelectorAll('.menu a');
-    const menuLength = menuItem.length;
-    for (let i = 0; i < menuLength; i += 1) {
-      if (menuItem[i].href === currentLocation) {
-        menuItem[i].className = 'active';
-      }
-    }
-  }
-  
-  function hideShow() {
+function hideShow() {
     const hideShowButton = document.querySelectorAll('.second_title');
     console.log(hideShowButton);
     for (let i = 0; i < hideShowButton.length; i += 1) {
@@ -30,5 +19,4 @@ function activeMenuItems() {
   }
   activeMenuItems();
   hideShow();
-  
   

@@ -14,7 +14,7 @@
             </nav>
             <section class="recipes">
                 {% for item in items %}
-                    <div class="card">
+                    <div class="card" onclick="click_card()">
                         <img src="{{ item.image }}">
                             <div class="card__title">
                                 <p>{{ item.title }}</p>
@@ -25,15 +25,8 @@
                         </div>
                     {% endfor %}
                 </section>
-                <div class="modalOverlay">
-                    <div class="modal">
-                        <img src="" alt="">
-                            <h1></h1>
-                            <h2></h2>
-                            <p>Fechar modal</p>
-                        </div>
-                    </div>
                 {% endblock %}
+                
                 {% block footer %}
-                    <script src="script.js"></script>
+                    <script src="/cards.js"></script>
                 {% endblock %}

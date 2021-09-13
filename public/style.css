@@ -26,6 +26,7 @@ nav {
     padding-bottom: 30px;
     max-width: 940px;
     margin: 0 auto;
+    user-select: none;
 }
 
 .logo img {
@@ -155,4 +156,8 @@ footer .footer a {
     color: #999999;
     font-size: 14px;
     line-height: 16px;
+}
+
+.imagem img {
+    user-select: none;
 }

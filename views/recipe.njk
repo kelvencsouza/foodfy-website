@@ -26,7 +26,7 @@
                                 <span class="second_title">ESCONDER</span>
                             </div>
                             <p class="description">
-                                <ul class="description_list">
+                                <ul class="description_list" id="description_padding_left">
                                     {% for item in item.ingredients %}
                                         <li>{{ item }}</li>
                                     {% endfor %}
@@ -39,7 +39,7 @@
                                 <span class="second_title">ESCONDER</span>
                             </div>
                             <p class="description">
-                                <ul class="description_list">
+                                <ul class="description_list" id="description_padding_left">
                                     {% for item in item.preparation %}
                                         <li>{{ item }}</li>
                                     {% endfor %}
@@ -51,14 +51,18 @@
                                 <a class="first_title" id="padding_top">Informações adicionais</a>
                                 <span class="second_title">ESCONDER</span>
                             </div>
-                            <p class="description">{{ item.information }}</p>
+                            <p class="description_list description">{{ item.information }}</p>
                         </div>
                     </div>
                 </section>
             {% endblock %}
 
             {% block footer %}
-                <script src="panel.js"></script>
+                <script src="/recipe.js"></script>
             {% endblock %}
+            
+
+
+    
 
 
