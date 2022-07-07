@@ -7,11 +7,11 @@ Um site de receitas que mostra as informações e receitas de cada cheff.
 # 🚀 Tecnologias
 As principais tecnologias utilizadas nesse projeto foram:
 
-• NODEJS;
-• EXPRESS;
-• HTML/CSS;
-• NUNJUCKS;
-• JAVASCRIPT;
+• nodejs <br>
+• express <br>
+• html/css <br>
+• nunjucks <br>
+• javascript
 
 
 
